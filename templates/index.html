@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Classifier</title>
+</head>
+<body>
+  <h1>อัปโหลดภาพขยะ</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <input type="submit" value="ประมวลผล">
+  </form>
+  {% if result %}
+    <h2>ผลลัพธ์: {{ result }}</h2>
+  {% endif %}
+</body>
+</html>
